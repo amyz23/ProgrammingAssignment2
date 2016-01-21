@@ -31,7 +31,7 @@ makeCacheMatrix <- function(x = matrix()) {
 cacheSolve <- function(x, ...) {
   minv <- x$inv_get()
   if(!is.null(minv)) {
-    message("getting cached data")
+    message("Getting cached data")
     return(minv)
   }
   matrix <- x$get()
